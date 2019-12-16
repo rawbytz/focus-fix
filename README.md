@@ -1,5 +1,5 @@
 ## WorkFlowy: Focus Fix
-- Only activates when no focus is detected either in the search box or on content.
+- Activates when no focus is detected either in the search box or on content after a location change.
 - Puts focus on the first match or top bullet.
 - [Click here to install in your script manager](https://github.com/rawbytz/focus-fix/raw/master/focusFix.user.js)
 ### Version Notes
