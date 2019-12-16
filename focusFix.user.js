@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         WorkFlowy Focus Fix
 // @namespace    https://rawbytz.wordpress.com
-// @version      2.0
+// @version      2.1
 // @description  Fix WorkFlowy lost focus
 // @author       rawbytz
 // @match        https://workflowy.com/*
 // @match        https://beta.workflowy.com/*
-// @updateUrl    https://gist.github.com/rawbytz/b50d56662fd942eedb8589ed4148daaa/raw/focusFix.user.js
-// @downloadUrl  https://gist.github.com/rawbytz/b50d56662fd942eedb8589ed4148daaa/raw/focusFix.user.js
+// @updateUrl    https://github.com/rawbytz/focus-fix/raw/master/focusFix.user.js
+// @downloadUrl  https://github.com/rawbytz/focus-fix/raw/master/focusFix.user.js
 // @grant        none
 // @run-at       document-end
 
