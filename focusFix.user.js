@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WorkFlowy Focus Fix
 // @namespace    https://rawbytz.wordpress.com
-// @version      2.2
+// @version      2.3
 // @description  Fix WorkFlowy lost focus
 // @author       rawbytz
 // @match        https://workflowy.com/*
