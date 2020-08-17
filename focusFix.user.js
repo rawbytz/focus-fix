@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WorkFlowy Focus Fix
 // @namespace    https://rawbytz.wordpress.com
-// @version      2.3
+// @version      2.4
 // @description  Fix WorkFlowy lost focus
 // @author       rawbytz
 // @match        https://workflowy.com/*
@@ -28,7 +28,7 @@
   //Fix for duplicate global listener
   const previousListener = window.WFEventListener;
   window.WFEventListener = event => {
-    previousListener && previousListener(event);
+    if (previousListener) previousListener(event);
     if (event === "locationChanged") requestAnimationFrame(fixFocus);
   };
 
