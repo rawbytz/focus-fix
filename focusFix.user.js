@@ -24,11 +24,16 @@
     const content = document.getElementsByClassName("content");
     if (content.length > 0) content[index].focus();
     }
+  
+  //Fix for duplicate global listener
+  const previousListener = window.WFEventListener;
   window.WFEventListener = event => {
-    if (event === 'locationChanged') requestAnimationFrame(fixFocus);
+    previousListener && previousListener(event);
+    if (event === "locationChanged") requestAnimationFrame(fixFocus);
   };
+
   function waitForActivePage() {
-    if (document.getElementsByClassName("page active").length > 0) return void fixFocus();
+    if (document.querySelector(".page.active")) return void fixFocus();
     setTimeout(waitForActivePage, 300);
   }
   waitForActivePage();
